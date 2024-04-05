@@ -1,0 +1,233 @@
+
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+body{
+    background-image: url(https://wallpapers.com/images/featured/movie-9pvmdtvz4cb0xl37.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#nav{
+    height: 85px;
+    width: auto;
+    border-bottom: 1px solid black;
+    /* text-align: center; */
+    padding-top: 25px;
+    padding-left: 10px;
+    background-color: #000;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#nepxplore{
+    display: flex;
+}
+
+nav h1{
+    font-size: 2.5rem;
+    display: inline-block;
+   
+
+}
+#sign-in{
+    background-color: #d10000;
+    border-radius: 3px;
+    padding: 10px;
+    float: right;
+    margin-right: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+    
+
+#display{
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    margin-left: 60px;
+    margin-top: 0.5%;
+    height: 75vh;
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    
+
+
+}
+.display-child{
+    width: 45%;
+    height: 90%;
+}
+#part-1{
+    width: 35%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+
+}
+#search{
+    height: 10%;
+    width: 70%;
+    /* margin-left: 140px; */
+    margin-top: 10px;
+    /* border: 1px solid black; */
+
+}
+#photo{
+    height: 85%;
+    width: 70%;
+    /* border: 1px solid black; */
+}
+#photo img{
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+}
+#photo :hover{
+    height: 98%;
+    width: 98%;
+
+}
+#rating{
+    height: 10%;
+    width: 50%;
+    font-size: 1.1rem;
+    margin-top: 7px;
+    /* border: 1px solid black; */
+}
+
+#part-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: 2px solid rgb(12, 0, 0);
+    border-radius: 6px;
+
+}
+
+#title{
+    height: 10%;
+    width: 70%;
+    /* border: 1px solid black; */
+    padding-left: 5px;
+    
+}
+#movie-name{
+    font-size: 4rem;
+}
+
+#detail{
+    width: 100%;
+    height: 60%;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: row;
+    justify-content: space-between;
+    align-items: center;
+
+    
+}
+#short-description{
+    height: 15%;
+    width: 94%;
+    border: 2px solid white;
+    border-radius: 7px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1.3rem;
+
+}
+.detail-child{
+    height: 90%;
+    width: 47%;
+    
+    /* border: 1px solid black; */
+
+
+}
+#production-info{
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 8px;
+}
+
+#actors{
+    font-size: 1.5rem;
+    padding-left: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+li{
+    list-style: none;
+}
+input[type="text"]{
+    padding: 15px;
+    background-color: aliceblue;
+    color: black;
+margin-top: 10px;
+width: 30%;
+border-radius: 10px;
+margin-left: 60px;
+}
+#button{
+    padding: 15px;
+    border-radius: 7px;
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+h3{
+    font-size: 1.5rem;
+   
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgba(255, 255, 0, 0.829);
+    display: inline-block;
+    padding-left: 8px;
+}
+
+#watch-on{
+    width: 15%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 5px;
+    /* border: 2px solid black; */
+}
+
+a img{
+    height: 100px;
+    padding-left: 30px;
+
+}
+#dopebox{
+    height: 50px;
+    padding-left: 45px;
+    margin-top: 10px;
+    
+}
+#prime{
+    height: 65px;
+    padding-left: 30px;
+    padding-top: 10px;
+}
+
+footer{
+    text-align: center;
+    color: red;
+    background-color: white;
+}
