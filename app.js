@@ -38,7 +38,7 @@ fetchData(movie_name);
 
 search_button = document.getElementById("button");
 search_button.addEventListener('click', () => {
-    get_name = document.getElementById("get_movie").value;
+    const get_name = document.getElementById("get_movie").value;
     fetchData(get_name);
 })
 
