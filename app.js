@@ -1,10 +1,10 @@
-
+// function to handle error while fetching data
 async function fetchData(movie_name) {
 
     const url = `https://www.omdbapi.com/?t=${movie_name}&apikey=9d5c1d5d`;
-    response = await fetch(url);
+    const response = await fetch(url);
     console.log("Response satatus:", response);
-    data = await response.json();
+    const data = await response.json();
     console.log(data);
     document.querySelector("#movie-name").innerText = `${data.Title}`;
     document.querySelector("#name").innerText = `Movie:${data.Title}:`;
@@ -19,7 +19,7 @@ async function fetchData(movie_name) {
     const image_url = data.Poster;
     document.querySelector("#photo").innerHTML = `<img src=${image_url} alt="">`;
     const actors = data.Actors;
-    list_of_actors = actors.split(',');
+    const list_of_actors = actors.split(',');
     console.log(list_of_actors);
     console.log(list_of_actors[0]);
     document.querySelector("#act1").innerText = list_of_actors[0];
@@ -34,11 +34,11 @@ async function fetchData(movie_name) {
 }
 
 const movie_name = "12th fail";
-fetchData(movie_name);
+fetchData(movie_name); //for deafult dashboard
 
-search_button = document.getElementById("button");
+const search_button = document.getElementById("button");
 search_button.addEventListener('click', () => {
     const get_name = document.getElementById("get_movie").value;
-    fetchData(get_name);
+    fetchData(get_name); 
 })
 
