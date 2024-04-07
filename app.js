@@ -7,7 +7,7 @@ async function fetchData(movie_name) {
     const data = await response.json();
     console.log(data);
     document.querySelector("#movie-name").innerText = `${data.Title}`;
-    document.querySelector("#name").innerText = `Movie:${data.Title}:`;
+    document.querySelector("#name").innerText = `Title:${data.Title}`;
     document.querySelector("#year").innerText = `Year :${data.Year}`;;
     document.querySelector("#director").innerText = data.Director;
     document.querySelector("#Relsease-date").innerText = `Release Date ${data.Released}`;
@@ -31,6 +31,9 @@ async function fetchData(movie_name) {
 
 
 
+
+
+
 }
 
 const movie_name = "12th fail";
@@ -40,5 +43,7 @@ const search_button = document.getElementById("button");
 search_button.addEventListener('click', () => {
     const get_name = document.getElementById("get_movie").value;
     fetchData(get_name); 
+    
+
 })
 

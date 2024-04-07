@@ -114,12 +114,12 @@ nav h1{
 
 #title{
     height: 10%;
-    width: 90%;
+    width: 100%;
     padding-left: 5px;
     
 }
 #movie-name{
-    font-size: 4rem;
+    font-size: 3.5rem;
 }
 
 #detail{
@@ -191,6 +191,9 @@ h3{
     color: rgba(255, 255, 0, 0.829);
     display: inline-block;
     padding-left: 8px;
+}
+#plot{
+    padding-left: 10px;
 }
 
 #watch-on{
